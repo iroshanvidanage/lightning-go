@@ -24,3 +24,13 @@
 - `package rest` building this won't give an executable package. Reusable/Dependenc packages.
 - The main package should contain a function called `main` as well.
 
+
+## Basic go data types
+
+| Type | Example |
+| ----- | ----- |
+| `bool` | `true` , `false` |
+| `string` | "Hi" , "How is it going?" |
+| `int` | 0 , -1000 , 99999 |
+| `float64` | 10.00001 , 0.00009 , -100.03 |
+
