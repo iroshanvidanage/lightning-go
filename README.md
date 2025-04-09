@@ -34,3 +34,10 @@
 | `int` | 0 , -1000 , 99999 |
 | `float64` | 10.00001 , 0.00009 , -100.03 |
 
+
+## Functions
+
+- Files in the same package can freely call functions in other files
+- The command should contain all the files
+    - `go run main.go deck.go`
+    - `go run *.go`
