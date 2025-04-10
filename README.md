@@ -41,3 +41,63 @@
 - The command should contain all the files
     - `go run main.go deck.go`
     - `go run *.go`
+
+
+## Data Structures
+
+- Arrays:
+    - Fixed length list of data.
+    - More basic primitive type.
+- Slices:
+    - A list that can grow or shrink.
+    - A type which have more features.
+- Both types must be declared with a data type; string, int etc..
+
+
+## Looping over a data set
+
+- `for` loop explained;
+    - `index` == index of this element in the array
+    - `card` == Current card we are iterating over
+    - `range deckCards` == Take the slice of `deckCards` and loop over it
+
+```go
+for index, card := range deckCards {
+	fmt.Println(index, card)
+}
+```
+
+- Basically there are 4 paterns in golang using `for` loop [construct](https://yourbasic.org/golang/for-loop/).
+
+```go
+// For-each range loop
+for index, card := range deckCards {
+	fmt.Println(index, card)
+}
+
+// Three component loop
+for index := 0; index < 10; index++ {
+    fmt.Println(index)
+}
+
+// Infinite loop
+for {
+    fmt.Println("hello")
+}
+
+// While loop
+for n < 5 {
+    fmt.Println("hello")
+}
+```
+
+- How to exit a loop
+
+```go
+for index := range 10 {
+    if index%2 != 0 {
+        continue
+    }
+    fmt.Println(index)
+}
+```
