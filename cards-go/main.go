@@ -29,7 +29,7 @@ func main() {
 	// the command should contain all the files
 	newDeck()
 
-	// Creating a new array
+	// Creating a new slice
 	deckCards := []string{newCard(), "Ace of Diamonds"}
 
 	fmt.Println(deckCards)
