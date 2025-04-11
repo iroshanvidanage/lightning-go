@@ -120,3 +120,18 @@ func (d deck) print() {
 }
 ```
 
+
+## Slices
+
+- Slices are zero-indexed.
+- Slices can be used for slicing up.
+
+```go
+
+fruits := []string{"apple", "banana", "grape", "orange"}
+
+fruits[startIndexInclusive : upToNotInclusive]
+
+fruits[0:2] == "apple", "banana"
+
+```
