@@ -6,6 +6,18 @@ package main
 import "fmt"
 
 func auxiliary() {
+
+	// Creating a new slice
+	deckCards := []string{newCard(), "Ace of Diamonds"}
+
+	fmt.Println(deckCards)
+
+	// append will not modify the existing array but will create a new slice
+	// and assign it to the variable.
+	deckCards = append(deckCards, "Six of Spades")
+
+	fmt.Println(deckCards)
+
 	// For loop
 	for i, card := range deckCards {
 		fmt.Println(i, card)
