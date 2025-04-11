@@ -37,3 +37,7 @@ func auxiliary() {
 		fmt.Println("2nd type", index)
 	}
 }
+
+func newDeck() {
+	fmt.Println("The deck has 52 cards")
+}
