@@ -7,6 +7,28 @@ import "fmt"
 
 func auxiliary() {
 
+	// var card string = "Ace of Spades"
+	// following is used only for declaring new variables
+	cards := "Ace of Spades"
+	cards = "Five of Hearts"
+
+	// var deckSize int
+	// Any variable should be initialized
+	deckSize = 52
+
+	fmt.Println(cards, deckSize)
+
+	card := newCard()
+
+	fmt.Println(card)
+
+	// This is also valid
+	fmt.Println(newCard())
+
+	// Files in the same package can freely call functions in other files
+	// the command should contain all the files
+	newDeck()
+
 	// Creating a new slice
 	deckCards := []string{newCard(), "Ace of Diamonds"}
 
