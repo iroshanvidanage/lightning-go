@@ -101,3 +101,16 @@ for index := range 10 {
     fmt.Println(index)
 }
 ```
+
+## Receiver Function
+
+- `func (d deck) print()` : means that any variable has type deck gets access to print method
+
+```go
+func (d deck) print() {
+	for i, card := range d { // the d here is similar to this/self
+		fmt.Println(i, card)
+	}
+}
+```
+
