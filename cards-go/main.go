@@ -29,17 +29,6 @@ func main() {
 	// the command should contain all the files
 	newDeck()
 
-	// Creating a new slice
-	deckCards := []string{newCard(), "Ace of Diamonds"}
-
-	fmt.Println(deckCards)
-
-	// append will not modify the existing array but will create a new slice
-	// and assign it to the variable.
-	deckCards = append(deckCards, "Six of Spades")
-
-	fmt.Println(deckCards)
-
 }
 
 // defining a new function
