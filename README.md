@@ -102,6 +102,12 @@ for index := range 10 {
 }
 ```
 
+> [!IMPORTANT]
+> In golang if we declare a variable we must use it any point.
+> If we doesn't need it but it should be declared we can replace it with a *_* (underscore).
+> In loops where the range is used the first variable is always used for index, hence we can replace it with an underscore to ignore it.
+
+
 ## Receiver Function
 
 - `func (d deck) print()` : means that any variable has type deck gets access to print method

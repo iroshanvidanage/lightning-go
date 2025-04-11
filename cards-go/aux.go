@@ -60,6 +60,9 @@ func auxiliary() {
 	}
 }
 
-func newDeck() {
-	fmt.Println("The deck has 52 cards")
+// defining a new function
+// the return type must be annotated
+
+func newCard() string {
+	return "Five of Diamonds"
 }

@@ -5,8 +5,10 @@ package main
 var deckSize int
 
 func main() {
-	cards := deck{"Ace of Diamonds", newCard()}
-	cards = append(cards, "Six of Spades")
+	// cards := deck{"Ace of Diamonds", newCard()}
+	// cards = append(cards, "Six of Spades")
+
+	cards := newDeck()
 
 	// declaring only one variable will only give the index of the slice
 	// for card := range cards {
@@ -14,10 +16,4 @@ func main() {
 	// }
 
 	cards.print()
-}
-
-// defining a new function
-// the return type must be annotated
-func newCard() string {
-	return "Five of Diamonds"
 }
