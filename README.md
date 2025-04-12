@@ -143,3 +143,8 @@ fruits[0:2] == "apple", "banana"
 - `nil` object defines a value of nothing, a `null` value.
 
 
+## Go Testing
+
+- For testing need to create a `go.mod` file
+- `go mod init <project_name>`
+
