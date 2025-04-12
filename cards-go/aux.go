@@ -3,7 +3,11 @@ package main
 // this script contains any auxiliary code that is written to understand the main code
 // functionalities
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
 
 var deckSize int
 
@@ -67,4 +71,13 @@ func auxiliary() {
 
 func newCard() string {
 	return "Five of Diamonds"
+}
+
+// creating a random new source to seed to create a random numb generator
+// this is not needed now cause random number generator is optimized in the newer version.
+func sourceGenerator(n int) int {
+	source := rand.NewSource(time.Now().UnixNano())
+	r := rand.New(source)
+
+	return r.Intn(n)
 }
