@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // We can initialize a variable outside of a function,
 // but cannot assign any value ( := ) cannot be used outside of a function to initialize a variable
 
@@ -35,12 +33,18 @@ func main() {
 	// fmt.Println(cards.saveToFile("card_deck.txt"))
 
 	// a new deck from the file
-	cards := newDeckFromFile("card_deck.txt")
-	fmt.Println("New deck from file")
-	cards.print()
+	// cards := newDeckFromFile("card_deck.txt")
+	// fmt.Println("New deck from file")
+	// cards.print()
 
-	fmt.Println("Shuffle the cards")
-	cards.shuffleDeck()
-	cards.print()
+	// fmt.Println("Shuffle the cards")
+	// cards.shuffleDeck()
+	// cards.print()
 
+	int_slice := []int{}
+	for i := range 11 {
+		int_slice = append(int_slice, i)
+	}
+
+	odd_even(int_slice)
 }
