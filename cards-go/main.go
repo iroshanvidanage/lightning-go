@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // We can initialize a variable outside of a function,
 // but cannot assign any value ( := ) cannot be used outside of a function to initialize a variable
 
@@ -41,10 +43,18 @@ func main() {
 	// cards.shuffleDeck()
 	// cards.print()
 
-	int_slice := []int{}
-	for i := range 11 {
-		int_slice = append(int_slice, i)
-	}
+	// odd or even
+	// slice_int()
 
-	odd_even(int_slice)
+	// structs
+	iro := person{"Iroshan", "Vidanage"}
+	shi := person{firstName: "Shihan", lastName: "Vidanage"}
+	fmt.Println(iro, shi)
+
+	var ss person
+	fmt.Printf("%+v", ss)
+	ss.firstName = "Alex"
+	ss.lastName = "Anderson"
+	fmt.Println(ss)
+
 }

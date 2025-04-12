@@ -148,3 +148,8 @@ fruits[0:2] == "apple", "banana"
 - For testing need to create a `go.mod` file
 - `go mod init <project_name>`
 
+
+## Struct
+
+- A collection of different properties.
+
