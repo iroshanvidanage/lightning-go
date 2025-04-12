@@ -4,13 +4,13 @@ import "fmt"
 
 // We can initialize a variable outside of a function,
 // but cannot assign any value ( := ) cannot be used outside of a function to initialize a variable
-var deckSize int
 
 func main() {
 	// cards := deck{"Ace of Diamonds", newCard()}
 	// cards = append(cards, "Six of Spades")
 
-	cards := newDeck()
+	// new deck of cards
+	// cards := newDeck()
 
 	// declaring only one variable will only give the index of the slice
 	// for card := range cards {
@@ -31,6 +31,16 @@ func main() {
 	// hand2.print()
 	// hand4.print()
 
-	fmt.Println(cards.saveToFile("card_deck.txt"))
+	// Save to file
+	// fmt.Println(cards.saveToFile("card_deck.txt"))
+
+	// a new deck from the file
+	cards := newDeckFromFile("card_deck.txt")
+	fmt.Println("New deck from file")
+	cards.print()
+
+	fmt.Println("Shuffle the cards")
+	cards.shuffleDeck()
+	cards.print()
 
 }

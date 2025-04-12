@@ -5,6 +5,8 @@ package main
 
 import "fmt"
 
+var deckSize int
+
 func auxiliary() {
 
 	// var card string = "Ace of Spades"
@@ -27,7 +29,7 @@ func auxiliary() {
 
 	// Files in the same package can freely call functions in other files
 	// the command should contain all the files
-	newDeck()
+	// newDeck()
 
 	// Creating a new slice
 	deckCards := []string{newCard(), "Ace of Diamonds"}

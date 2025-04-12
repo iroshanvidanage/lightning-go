@@ -135,3 +135,11 @@ fruits[startIndexInclusive : upToNotInclusive]
 fruits[0:2] == "apple", "banana"
 
 ```
+
+
+## 'error' Object
+
+- This error object will be populated if some error to happen while the execution, otherwise it will have a `nil` value.
+- `nil` object defines a value of nothing, a `null` value.
+
+
