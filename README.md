@@ -190,3 +190,22 @@ func printPointer(namePointer *string) {
 ```
 
 - Here, _the log statements will print different addresses because **everything** in go is pass by value_.
+
+
+## Maps
+
+```go
+var a = map[KeyType]ValueType{key1:value1, key2:value2,...}
+b := map[KeyType]ValueType{key1:value1, key2:value2,...}
+c := make(map[int]string)
+```
+
+### Maps vs Structs
+
+| Map | Struct |
+| ----- | ----- |
+| All keys must be same type, All values must be same type | Values can be different type |
+| Keys are indexed - can iterate over | Keys don't support indexing |
+| Reference type | Value type |
+| Use tp represent a collection of related properties | Use to represent a "collection" with a lot of different properties |
+| No need to know all the keys at compile time | Need to know all the fields at compile time |

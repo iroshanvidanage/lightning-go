@@ -11,6 +11,9 @@ func main() {
 	// slice_int()
 
 	// structs
-	structPlay()
+	// structPlay()
+
+	// maps
+	mapsPlay()
 
 }
