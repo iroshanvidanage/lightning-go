@@ -216,3 +216,28 @@ c := make(map[int]string)
 - Interfaces are declared as a new data structure with function as fields
 - Any function that is defined to use the parameter defined as the type of the interface type, that function can use/call any member functions of that interface type.
 
+```go
+type bot interface {
+	getGreeting(string, int) (string, error)
+	getBotVersion() float64
+	respondToUser(user) string
+}
+```
+
+- Interfaces are not generic types:
+    - Go does not have _generic_ types.
+- Interfaces are `implicit`: 
+    - Automatically creates the link between interface and the othertypes from the defined functions.
+- Interfaces are a contract to help us manage types.
+- Interfaces are tough. Step #1 is understanding how to read them:
+    - Understand how to read interfaces in the standard lib.
+
+
+### Concrete Type vs Interface Type
+
+| Concrete Type | Interface Type |
+| ----- | ----- |
+| Types you can create direct vaules of it. | Cannot create values directly out of these |
+| `map`, `struct`, `int`, `string`, `englishBot` | `bot` |
+
+
