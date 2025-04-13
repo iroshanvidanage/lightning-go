@@ -209,3 +209,10 @@ c := make(map[int]string)
 | Reference type | Value type |
 | Use tp represent a collection of related properties | Use to represent a "collection" with a lot of different properties |
 | No need to know all the keys at compile time | Need to know all the fields at compile time |
+
+
+## Interfaces
+
+- Interfaces are declared as a new data structure with function as fields
+- Any function that is defined to use the parameter defined as the type of the interface type, that function can use/call any member functions of that interface type.
+

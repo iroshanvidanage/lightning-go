@@ -14,6 +14,8 @@ func main() {
 	// structPlay()
 
 	// maps
-	mapsPlay()
+	// mapsPlay()
 
+	// interfaces
+	interfPlay()
 }
