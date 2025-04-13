@@ -169,3 +169,24 @@ fruits[0:2] == "apple", "banana"
 - Reference Types:
     - Passes a reference to the actual data value stored memory address.
     - `slices`, `maps`, `channels`, `pointers`, `functions`
+
+```go
+package main
+ 
+import "fmt"
+ 
+func main() {
+ name := "bill"
+ 
+ namePointer := &name
+ 
+ fmt.Println(&namePointer)
+ printPointer(namePointer)
+}
+ 
+func printPointer(namePointer *string) {
+ fmt.Println(&namePointer)
+}
+```
+
+- Here, _the log statements will print different addresses because **everything** in go is pass by value_.
