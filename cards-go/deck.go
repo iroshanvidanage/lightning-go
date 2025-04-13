@@ -69,3 +69,42 @@ func (d deck) shuffleDeck() {
 		}
 	}
 }
+
+func deckPlay() {
+	// card_deck := deck{"Ace of Diamonds", newCard()}
+	// card_deck = append(card_deck, "Six of Spades")
+
+	// new deck of cards
+	card_deck := newDeck()
+
+	// declaring only one variable will only give the index of the slice
+	// for card := range card_deck {
+	// 	fmt.Println(card)
+	// }
+
+	// card_deck.print()
+
+	fmt.Println(card_deck[0:5])
+
+	// hand1, remainDeck := deal(card_deck, 5)
+	// hand2, remainDeck := deal(remainDeck, 5)
+	// hand3, remainDeck := deal(remainDeck, 5)
+	// hand4, remainDeck := deal(remainDeck, 5)
+
+	// hand1.print()
+	// hand3.print()
+	// hand2.print()
+	// hand4.print()
+
+	// Save to file
+	fmt.Println(card_deck.saveToFile("card_deck.txt"))
+
+	// a new deck from the file
+	cards := newDeckFromFile("card_deck.txt")
+	fmt.Println("New deck from file")
+	cards.print()
+
+	fmt.Println("Shuffle the cards")
+	cards.shuffleDeck()
+	cards.print()
+}

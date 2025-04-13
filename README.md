@@ -152,4 +152,20 @@ fruits[0:2] == "apple", "banana"
 ## Struct
 
 - A collection of different properties.
+- Similar to a dictionary.
 
+
+## Pass by Value
+
+- When a func gets a data structure, it makes a copy of that value and then execute the function onto that copy.
+- _Pass by Value_ languages does this.
+
+
+## Reference vs Value Types
+
+- Value Types:
+    - Passes the direct value of the data structure to a function.
+    - `int`, `float`, `string`, `bool`, `structs`
+- Reference Types:
+    - Passes a reference to the actual data value stored memory address.
+    - `slices`, `maps`, `channels`, `pointers`, `functions`
