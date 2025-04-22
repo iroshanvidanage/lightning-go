@@ -18,5 +18,6 @@ func main() {
 
 	// interfaces
 	// interfPlay()
-	httpPlay()
+	// httpPlay()
+	interfaceAssignment()
 }
