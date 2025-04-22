@@ -17,5 +17,6 @@ func main() {
 	// mapsPlay()
 
 	// interfaces
-	interfPlay()
+	// interfPlay()
+	httpPlay()
 }
