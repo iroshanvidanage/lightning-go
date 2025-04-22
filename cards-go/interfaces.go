@@ -116,3 +116,20 @@ func interfaceAssignment() {
 	printArea(tri)
 	printArea(sq)
 }
+
+// #####################################
+// Assignement: Hard Mode Interfaces
+
+func hardInterfaceAssignment() {
+	fN := os.Args[1]
+
+	file, err := os.Open(fN)
+
+	if err != nil {
+		fmt.Println("Error: ", err)
+		os.Exit(1)
+	}
+
+	io.Copy(os.Stdout, file)
+	fmt.Println()
+}
