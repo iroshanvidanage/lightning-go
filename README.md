@@ -241,3 +241,31 @@ type bot interface {
 | `map`, `struct`, `int`, `string`, `englishBot` | `bot` |
 
 
+## Concurrent Programming
+
+- Allows multiple computations to execute in an overlapping time period, not necessarily simultaneously, by managing access to shared resources.
+- It's a technique where two or more processes can start, run in an interleaved fashion through context switching, and complete within overlapping time periods.
+- This is different from parallel programming, which involves tasks running truly simultaneously on multiple processors.
+
+
+### Concurrency vs. Parallelism:
+
+- Both involve multiple tasks, concurrency focuses on the overlapping execution of tasks, even on a single processor, while parallelism requires multiple processors to truly run tasks simultaneously. 
+
+
+### Context Switching
+
+- Concurrency on a single processor is achieved through context switching, where the CPU rapidly switches between different threads, creating the illusion of parallel execution. 
+
+> [!NOTE]
+>
+> **Benefits**:
+> - Concurrent programming can improve application performance by allowing tasks to overlap and make progress even when certain parts are blocked, for example, while waiting for user input.
+>
+> **Complexity**:
+> - Concurrent programs can be complex due to the need to manage shared resources and avoid issues like race conditions and deadlocks.
+>
+> **Examples**:
+> - Operating systems and database management systems are examples of concurrent systems.
+
+

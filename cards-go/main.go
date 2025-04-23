@@ -20,5 +20,6 @@ func main() {
 	// interfPlay()
 	// httpPlay()
 	// interfaceAssignment()
-	hardInterfaceAssignment()
+	// hardInterfaceAssignment()
+	statusChecker()
 }
