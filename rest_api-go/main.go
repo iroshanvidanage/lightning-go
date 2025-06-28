@@ -52,7 +52,7 @@ func main() {
 	})
 
 	fmt.Println("Library application starting at http://localhost:8080")
-	log.Fatal(http.ListenAndServe("http://127.0.0.1:8080", nil))
+	log.Fatal(http.ListenAndServe(":8080", nil))
 	// If the server is publicly accessible
 	// log.Fatal(http.ListenAndServe(":8080", nil))
 }

@@ -16,6 +16,27 @@ Following basic APIs will be build to manage a library (list) of books.
 - `POST /return/{id}` : Return a book by it's id
 
 
+## API calls
+
+```bash
+# Get summary of available books
+curl http://127.0.0.1:8080/books
+
+# Get detail of a book
+curl http://127.0.0.1:8080/books/1
+
+# Add a book
+curl -X POST http://127.0.0.1:8080/books -H "Content-Type: application/json" -d '{"title": "How to Train your CAT", "author": "Garfield the Orange"}'
+
+curl -X POST http://127.0.0.1:8080/books -H "Content-Type: application/json" -d '{"title": "Strategic Approach to finding Waldo", "author": "Kenny C. Looper"}'
+
+# Reserve a book
+curl -X POST http://127.0.0.1:8080/reserve/1
+
+# Return a book
+curl -X POST http://127.0.0.1:8080/return/1
+```
+
 
 ## Development Notes
 

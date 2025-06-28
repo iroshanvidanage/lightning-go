@@ -95,18 +95,19 @@ func reserveBook(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// If no error, look for the book id
-	for _, book := range books {
+	for i, book := range books {
 		if book.Id == id {
 			if !book.Reserved {
-				books[id].Reserved = true
+				books[i].Reserved = true
 				w.Header().Set("X-Reserved", "Reserved")
+				io.WriteString(w, "Reserved: ")
 				json.NewEncoder(w).Encode(book.Title)
 				return
 			} else {
 				// Set a custom header
 				w.Header().Set("X-Reserved", "NotAvailable")
 				// w.WriteHeader(http.StatusOK)
-				io.WriteString(w, "This book is already reserved")
+				io.WriteString(w, "This book is already reserved\n")
 				return
 			}
 		}
@@ -127,11 +128,12 @@ func returnBook(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// If no error, look for the book id
-	for _, book := range books {
+	for i, book := range books {
 		if book.Id == id {
-			books[id].Reserved = false
+			books[i].Reserved = false
 			w.Header().Set("X-Reserved", "Available")
-			// json.NewEncoder(w).Encode(book.title)
+			io.WriteString(w, "Returned: ")
+			json.NewEncoder(w).Encode(book.Title)
 			return
 		}
 	}
