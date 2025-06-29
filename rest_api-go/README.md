@@ -53,3 +53,6 @@ type MyStruct struct {
 	ExportedField string `json:"exported_field"`
 }
 ```
+
+2. Understanding slices vs. IDs is crucial when managing in-memory data.
+3. Clear error handling and response headers can make a big difference.
